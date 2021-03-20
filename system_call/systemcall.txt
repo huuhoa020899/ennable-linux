@@ -1,0 +1,11 @@
+chuan Posix APIs and system call
+ideal.
+system call table
+	Entering and exiting a system call
+system call parameter handling
+each system call have a different number of parameter
+kernel have to check validation of paramter
+memory checking
+asscess_ok()
+verify_area()
+

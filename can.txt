@@ -1,0 +1,41 @@
+Duoc develop boi BOSH. Co dac diem de implement ve hardware va software, truyen on dinh toc do thap, khoang cach ngan.Do do phu  hop cho viec truyen tin hieu giua cac thiet bi trong oto.
+oto co hang tram cam bien khoang cach ngan.
+truyen khong bao mat cac node khac van co the doc duoc
+CAN network
+the CAN hardware module
+Can protocol in user-space
+CAN drive
+tim hieu ve protocol
+tim hieu ve hardware -vdk
+tim hieu API ma device cung cap cho OS(/Documentation trong kernel)
+Tao ra templat cua driver do.
+coding.
+can chi can 2 day moi mot thiet bi dinh kem 1 node moi node deu ngang hang.
+cac node tu thao luon voi nhau khong thang nao quan ly het.
+cac node se complie voi id  ban tin cua no neu trung no moi gui len tang tren.
+standard CAN frame
+SOF,Identifiler RTR, IDE,r0,DLC,DATA,CRC,ACK,EOF,IFS;
+Extended CAN,Mcan, CAN FD,flex CAN.
+Message types
+the data frame
+the remote frame
+the overload frame
+valid frame
+error checking and fault confinement.
+Transmit process
+Write CAN frame to transmit maile box
+set mail box status is ready to transmit
+setting interrupt when transmit success
+mail box co chua kich thuc 8 bit 64 byte
+co chua TIME STAMP.
+Receive process
+Write ID word
+Active received mail box
+Raise received packet interrupt
+Send ack
+Neu mail box bi tran thi no se tu gui ban tin overload vao trong duoc truyen.
+TRong CAN co 2 phan 1 mail box chua phan gui 1 mail box chua phan nhan.
+moi mot module CAN chi co 1 ID dinh danh cho chinh no.
+CAN protocol in user-sapace CAN interface
+Readm write CAN packet with socket.
+
